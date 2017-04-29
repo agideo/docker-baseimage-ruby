@@ -163,9 +163,12 @@ RUN set -ex \
 
 # DOTBASHRC END
 
+ENV EDITOR vim
+
 RUN mkdir /app
 WORKDIR /app
 VOLUME /app
 
 EXPOSE 22 80
+
 CMD ["sh", "-c", "env > /etc/environment ; /usr/bin/supervisord"]
