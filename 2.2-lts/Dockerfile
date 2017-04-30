@@ -159,6 +159,7 @@ RUN set -ex \
   && { \
     echo "export TERM=xterm"; \
     echo "export PATH=$(echo $PATH)"; \
+    echo "unset HISTFILE"; \
   } >> /root/.bashrc
 
 # DOTBASHRC END
