@@ -4,7 +4,7 @@ RUN apt-get update
 
 # DEBIAN_DPKGS BEGIN
 RUN set -ex \
-  && apt-get install -y --no-install-recommends ca-certificates curl wget git-core htop screen apt-transport-https vim libmysqlclient-dev mysql-client bzip2 libfontconfig
+  && apt-get install -y --no-install-recommends ca-certificates curl wget git-core htop screen apt-transport-https vim libmysqlclient-dev mysql-client bzip2 libfontconfig rsync
 
 # DEBIAN_DPKGS END
 
