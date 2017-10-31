@@ -104,6 +104,7 @@ RUN set -ex \
   && { \
     echo "export TERM=xterm"; \
     echo "export PATH=$(echo $PATH)"; \
+    echo "unset HISTFILE"; \
   } >> /root/.bashrc
 
 # DOTBASHRC END
@@ -113,4 +114,4 @@ WORKDIR /app
 VOLUME /app
 
 EXPOSE 22 80 3000
-CMD ["/usr/bin/supervisord"]
+CMD ["sh", "-c", "env >> /etc/environment ; /usr/bin/supervisord"]
