@@ -2,6 +2,7 @@ FROM ruby:2.3
 
 # BASE BEGIN
 RUN set -ex \
+  && apt-get update \
   && apt-get install -y --no-install-recommends ca-certificates curl wget git-core htop screen net-tools apt-transport-https cron supervisor locales openssh-server vim libmysqlclient-dev bzip2 libfontconfig mysql-client rsync \
   && rm -rf /var/lib/apt/lists/*
 
