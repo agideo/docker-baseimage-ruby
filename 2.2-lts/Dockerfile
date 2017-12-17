@@ -130,6 +130,6 @@ RUN mkdir /app
 WORKDIR /app
 VOLUME /app
 
-EXPOSE 22 80
+EXPOSE 22 80 3000
 
 CMD ["sh", "-c", "env >> /etc/environment ; /usr/bin/supervisord"]
