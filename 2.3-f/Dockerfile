@@ -50,7 +50,7 @@ RUN apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-keys 573BFD6
 
 # NODE6_LTS BEGIN
 RUN set -ex \
-  && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
+  && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
   && apt-get update \
   && apt-get install -y --no-install-recommends nodejs \
   && rm -rf /var/lib/apt/lists/*
