@@ -55,3 +55,7 @@
 * Workdir /app
 * Supervisor [ssh cron nginx]
 * Expose [22 80]
+
+# ruby2.1-a
+
+* 2.1-lts, freetds-dev
