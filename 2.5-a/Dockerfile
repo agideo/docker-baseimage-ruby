@@ -107,10 +107,12 @@ RUN set -ex \
 # Microsoft SQL Server 2000	7.1
 # Microsoft SQL Server 2005	7.2
 # Microsoft SQL Server 2008	7.3
+
 RUN set -ex \
-  && wget https://agi-pub.b0.upaiyun.com/2018-07-21/freetds-current.tar.gz \
-  && tar -zxf freetds-current.tar.gz \
-  && cd freetds-dev.1.00.406 \
+  && cd /tmp \
+  && wget ftp://ftp.freetds.org/pub/freetds/stable/freetds-1.00.94.tar.gz \
+  && tar xzvf freetds-1.00.94.tar.gz \
+  && cd freetds-1.00.94 \
   && ./configure --prefix=/usr/local --with-tdsver=7.3 \
   && make \
   && make install

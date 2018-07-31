@@ -59,3 +59,7 @@
 # ruby2.1-a
 
 * 2.1-lts, freetds-dev
+
+# ruby2.5-a
+
+* [Debian jessie, Node-lts, OpenSSH, Vim, Git, libmysqlclient-dev, bzip2, libfontconfig, mysql-client, freetds-dev]
