@@ -4,8 +4,8 @@ FROM ruby:2.3
 RUN set -ex \
   && apt-get update \
   && apt-get install -y --no-install-recommends ca-certificates curl wget git-core htop \
-    screen apt-transport-https cron supervisor locales openssh-server vim libmysqlclient-dev \
-    bzip2 libfontconfig mysql-client rsync net-tools less \
+    screen apt-transport-https cron supervisor locales openssh-server vim \
+    bzip2 libfontconfig default-libmysqlclient-dev mysql-client rsync net-tools less \
   && rm -rf /var/lib/apt/lists/*
 
 RUN set -ex \
