@@ -63,3 +63,8 @@
 # ruby2.5-a
 
 * [Debian jessie, Node-lts, OpenSSH, Vim, Git, libmysqlclient-dev, bzip2, libfontconfig, mysql-client, freetds-dev]
+
+
+# ruby2.3-g
+
+  ruby2.3-f + freetds-dev
