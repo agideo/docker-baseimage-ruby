@@ -5,7 +5,7 @@ RUN set -ex \
   && apt-get update \
   && apt-get install -y --no-install-recommends ca-certificates curl wget git-core htop \
    screen net-tools apt-transport-https cron supervisor locales openssh-server vim bzip2 \
-   libfontconfig rsync monit net-tools less \
+   libfontconfig rsync monit net-tools less dnsutils mtr \
   && rm -rf /var/lib/apt/lists/*
 
 RUN set -ex \
