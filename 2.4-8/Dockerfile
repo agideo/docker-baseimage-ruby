@@ -6,7 +6,7 @@ RUN set -ex \
   && apt-get install -y --no-install-recommends ca-certificates apt-transport-https \
    curl wget net-tools dnsutils mtr rsync git-core htop iftop screen vim \
    cron supervisor locales openssh-server bzip2 libfontconfig monit less \
-   default-mysql-client \
+   default-mysql-client redis-tools netcat logrotate \
   && rm -rf /var/lib/apt/lists/*
 
 RUN set -ex \
