@@ -4,7 +4,10 @@ RUN apt-get update
 
 # DEBIAN_DPKGS BEGIN
 RUN set -ex \
-  && apt-get install -y --no-install-recommends ca-certificates curl wget git-core htop screen apt-transport-https vim rsync libmysqlclient-dev
+  && apt-get install -y --no-install-recommends ca-certificates \
+    curl wget git-core htop screen apt-transport-https vim rsync \
+    libmysqlclient-dev logrotate \
+  && rm -rf /var/lib/apt/lists/*
 
 # DEBIAN_DPKGS END
 

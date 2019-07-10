@@ -17,9 +17,9 @@ RUN set -ex \
   ' \
   && echo 'deb http://archive.debian.org/debian wheezy main' > /etc/apt/sources.list \
   && apt-get update \
+  && apt-get upgrade -y \
   && apt-get install -y --no-install-recommends $buildDeps \
      gcc-4.6 \
-     logrotate \
   && curl -fSl -o ruby.tar.gz "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rubyenterpriseedition/ruby-enterprise-1.8.7-2012.02.tar.gz" \
   && echo "$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz" | sha256sum -c - \
   && mkdir -p /usr/src/ruby \
